@@ -1,0 +1,20 @@
+---
+const title = "David Lynch"
+const links = [{
+        path:"/",
+        title:"Home"
+    },{
+        path:"/about",
+        title:"About"
+    },{
+        path:"/blog",
+        title:"Blog"
+    }]
+---
+{
+    links.map((link)=>
+    <a 
+        class="bg-green-800 text-white hover:bg-green-700" 
+        href={link.path}>
+        {link.title}
+    </a>)}
