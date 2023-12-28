@@ -11,10 +11,14 @@ const links = [{
         title:"Blog"
     }]
 ---
+<h1>
+    {title}
+</h1>
 {
     links.map((link)=>
     <a 
         class="bg-green-800 text-white hover:bg-green-700" 
         href={link.path}>
         {link.title}
-    </a>)}
+    </a>)
+    }
